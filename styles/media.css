@@ -1,0 +1,185 @@
+@media (width <=800px) {
+  .header {
+    grid-template-rows: minmax(300px, 460px) min-content 1fr;
+    margin-inline-end: 1em;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right: 1px;
+  }
+
+  .decorated-zone::after {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .rec {
+    top: 22px;
+    right: 2px;
+  }
+
+  .header-paragraph {
+    margin-inline-end: 0.3em;
+  }
+  .about {
+    grid-template-columns: 1fr 2fr;
+  }
+  .problems {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 80px;
+  }
+
+  .tips {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1em repeat(3, auto);
+    margin-block-end: 76px;
+  }
+
+  .header-theme-menu-list {
+    flex-direction: column;
+    justify-self: end;
+    margin-block-start: 191px;
+  }
+
+  .problems .content-title-text {
+    max-inline-size: 30%;
+  }
+
+  .footer {
+    margin-inline-end: 20px;
+  }
+
+  .footer-title {
+    margin-inline-start: 20px;
+  }
+}
+
+@media (width <= 760px) and (width > 400px) {
+  .tips .content-article:first-of-type .content-article-text:first-child {
+    margin-block-start: 40px;
+  }
+
+  .header-paragraph {
+    margin-block-start: 1px;
+  }
+}
+
+@media (width <=400px) {
+  .page {
+    inline-size: 375px;
+  }
+
+  .decorated-zone::before {
+    top: 10px;
+    right: 10px;
+  }
+
+  .decorated-zone::after {
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .rec {
+    top: 12px;
+    right: 11px;
+  }
+
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 230px auto auto;
+    margin-inline: 0px;
+    margin-block-end: 40px;
+    padding: 10px;
+    padding-bottom: 40px;
+  }
+
+  .header-title {
+    --header-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .header-theme-menu-list {
+    flex-direction: column;
+    justify-self: end;
+    margin-inline-end: 5px;
+    margin-block-start: 18%;
+  }
+
+  .header-paragraph {
+    --header-paragraph-size: 355px;
+    margin-inline-end: 5px;
+    margin-block-start: 10%;
+    padding-right: 0;
+  }
+
+  .main {
+    margin: 0 10px;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-block-end: 50px;
+  }
+
+  .problems {
+    margin-block-end: 50px;
+  }
+
+  .problems .content-title-text {
+    width: 100%;
+    max-inline-size: initial;
+  }
+
+  .tips {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-block-end: 50px;
+  }
+
+  .tips article {
+    margin-top: 0;
+  }
+
+  .content-article {
+    grid-column: 1;
+  }
+
+  .content-article-title {
+    --main-indent: 0;
+    grid-column: 1;
+  }
+
+  .gallery-section {
+    --main-indent: 10px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sunset"
+      "ice-cream"
+      "tape"
+      "books"
+      "street";
+    gap: 10px;
+  }
+
+  .gallery img {
+    display: block;
+  }
+
+  .footer {
+    margin-block-start: 40px;
+    margin-inline-end: 0;
+  }
+
+  .footer-title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    margin-inline-start: 0;
+  }
+}
