@@ -135,6 +135,10 @@ html {
   grid-row: auto;
 }
 
+.problems .content-article .content-text:not(:first-child) {
+    margin-top: 10px;
+}
+
 .tips {
   display: grid;
   grid-template-columns: 1fr 2.06fr;
