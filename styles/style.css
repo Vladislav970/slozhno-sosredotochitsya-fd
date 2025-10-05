@@ -136,7 +136,7 @@ html {
 }
 
 .problems .content-article .content-text:not(:first-child) {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .tips {
