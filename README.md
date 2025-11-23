@@ -30,6 +30,7 @@
     ```bash
  https://github.com/Vladislav970/slozhno-sosredotochitsya-fd.git
     ```
+    просмотр проекта: https://vladislav970.github.io/slozhno-sosredotochitsya-fd/
 
 2.  **Откройте `index.html` в браузере:**
 
